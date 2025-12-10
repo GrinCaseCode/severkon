@@ -391,6 +391,7 @@ form {
 }
 .brands__item {
 	height: 76px;
+	padding: 7px;
 	flex: 1;
 	display: flex;
 	align-items: center;

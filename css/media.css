@@ -239,16 +239,16 @@
         font-size: 28px;
     }
     .billbord__item {
-        font-size: 14px;
+        font-size: 12px;
     }
     .billbord__item:nth-child(1) {
         top: auto;
         padding-left: 25px;
         margin-left: 0;
-        width: 155px;
+        width: 133px;
         left: auto;
-        bottom: 15px;
-        right: -19px;
+        bottom: 74px;
+        right: 23px;
         animation: initial;
     }
     .billbord__item:nth-child(2) {
@@ -257,19 +257,23 @@
         margin-right: 0;
         width: 103px;
         right: auto;
-        left: 0;
-        bottom: -4px;
+        left: 19px;
+        bottom: 6px;
         animation: initial;
     }
     .billbord__item:nth-child(3) {
-        top: -5px;
+        top: -3px;
         padding-right: 25px;
         margin-right: 0;
-        width: 150px;
+        width: 125px;
         right: auto;
-        left: -19px;
+        left: 13px;
         text-align: right;
         animation: initial;
+    }
+    .billbord__image img {
+        max-width: 240px;
+        margin: 0 auto;
     }
     .billbord__item::before {
         width: 18px;

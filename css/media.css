@@ -287,7 +287,7 @@
     .billbord__title strong {
         font-size: 28px;
     }
-    .billbord__item {
+    /* .billbord__item {
         font-size: 12px;
     }
     .billbord__item:nth-child(1) {
@@ -331,7 +331,14 @@
         margin: 0 auto;
         margin-top: 15px;
         transform: none;
-    }
+    } */
+     .billbord__system {
+        left: 50%;
+        margin-top: 20px;
+        margin-bottom: -300px;
+        transform: scale(0.27) translateX(-50%);
+        transform-origin: 0 0;
+     }
     body {
         font-size: 14px;
     }

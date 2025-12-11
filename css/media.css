@@ -335,7 +335,7 @@
      .billbord__system {
         left: 50%;
         margin-top: 20px;
-        margin-bottom: -300px;
+        margin-bottom: -360px;
         transform: scale(0.27) translateX(-50%);
         transform-origin: 0 0;
      }

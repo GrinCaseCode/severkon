@@ -560,6 +560,9 @@ form {
 	width: 100%;
 	display: flex;
 }
+.content-card .item-catalog .btn-main {
+	width: 100%;
+}
 .labels {
 	gap: 3px;
 	top: 0;

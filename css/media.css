@@ -808,7 +808,12 @@
         position: relative;
     }
     .property::after {
-        min-width: 25px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
     .page-card {
         padding-bottom: 50px;
@@ -916,6 +921,17 @@
     }
     .title-page {
         margin-bottom: 20px;
+    }
+    .property {
+        margin-bottom: 5px;
+        position: relative;
+        align-items: flex-start;
+    }
+    .property__value span,
+    .property__title span {
+        background: #fff;
+        position: relative;
+        z-index: 2;
     }
 }
 

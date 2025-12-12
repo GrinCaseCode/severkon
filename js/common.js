@@ -131,7 +131,12 @@ $(document).ready(function() {
 	});
 
 
-
+  //замена рубля
+  $('body :not(script)').contents().filter(function() {
+    return this.nodeType === 3;
+  }).replaceWith(function() {
+      return this.nodeValue.replace('₽','<span class="rub-main">₽</span>');
+  });
 
 	objectFitImages();
 

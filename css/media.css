@@ -747,10 +747,10 @@
         font-size: 19px;
     }
     .row.row_news>div {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
     .row.row_news {
-        margin-bottom: -35px;
+        margin-bottom: -30px;
     }
     .item-news__top .item-news__date {
         bottom: 0;
@@ -910,6 +910,12 @@
     }
     .page-contacts .title-section {
         margin-bottom: 25px;
+    }
+    .page-news {
+        padding-top: 10px;
+    }
+    .title-page {
+        margin-bottom: 20px;
     }
 }
 

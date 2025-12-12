@@ -1492,3 +1492,8 @@ form {
 	margin-top: 10px;
 	width: 100%;
 }
+.rub-main {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-family: "Helvetica Neue", sans-serif !important;
+}

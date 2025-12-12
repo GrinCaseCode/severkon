@@ -933,6 +933,9 @@
         position: relative;
         z-index: 2;
     }
+    .item-contact__title, .item-contact__phones {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width : 480px) {

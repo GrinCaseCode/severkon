@@ -1143,6 +1143,9 @@
         height: 500px;
         min-height: initial;
     }
+    .hero__item--5 {
+        bottom: 5vw;
+    }
 }
 
 @media only screen and (max-width : 768px) {

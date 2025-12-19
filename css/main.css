@@ -1611,6 +1611,7 @@ form {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: 100vw auto;
+	position: relative;
 }
 .wrapper--main .header {
 	position: absolute;

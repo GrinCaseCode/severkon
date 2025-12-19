@@ -2129,3 +2129,22 @@ form {
 .page-about--main .unit-about:nth-child(2) .features {
 	max-width: 583px;
 }
+.video-main video {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	transform: translate(-50%, -50%);
+	filter: grayscale(1);
+}
+.video-main {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}

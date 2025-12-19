@@ -1524,7 +1524,7 @@ form {
 }
 .circle-3,
 .circle-2 {
-	--inset: auto auto calc(50% + -12px) -430px;
+	--inset: auto auto calc(50% + -12px) -380px;
 	--inset-anim: auto auto -40px calc(50% + 450px);
 	--delay: 0s;
 	--rotation-name: rotation-2;

@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="libs/fullPage.js-master/dist/fullpage.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.8" />
-	<link rel="stylesheet" href="css/media.css?ver=1.8" />
+	<link rel="stylesheet" href="css/main.css?ver=1.9" />
+	<link rel="stylesheet" href="css/media.css?ver=1.9" />
 </head>
 <body>
 
@@ -30,8 +30,44 @@
 				<div class="container">
 					<div class="header__wrapper">
 						<div class="header__left">
-							<div class="header__info">
-								<p>г. Симферополь, ул. Крылова, 172 <br>+7 (918) 073-82-82,  +7 (918) 074-82-82</p>
+							<div class="location-main">
+								<div class="location-main__value"><i class="far fa-chevron-down"></i> Симферополь</div>
+								<div class="dropdown-city"> 
+									<div class="close-dropdown"><i class="far fa-times"></i></div>
+									<div class="dropdown-city__title">Ваш город — <span>Москва?</span></div> 
+									<div class="dropdown-city__buttons">
+										<span class="btn-main close-city">Все верно</span> 
+										<span class="btn-main btn-main--page">Сменить город</span> 
+									</div>
+								</div>
+								<div class="modal-city"> 
+									<div class="modal-city__wrappper">
+										<div class="modal-city__content">
+										<div class="close-dropdown"><i class="far fa-times"></i></div>
+										<div class="modal-city__search">
+											<form>
+												<input type="text" placeholder="Введите название города" required>
+											</form>
+										</div>
+											<ul class="list-cities">
+												<li><a href="#">Ростов-на-Дону</a></li> 
+												<li><a href="#">Москва</a></li> 
+												<li><a href="#">Краснодар</a></li> 
+												<li><a href="#">Симферополь</a></li> 
+												<li><a href="#">Севастополь</a></li> 
+												<li><a href="#">Самара</a></li> 
+												<li><a href="#">Рязань</a></li> 
+												<li><a href="#">Ростов-на-Дону</a></li> 
+												<li><a href="#">Москва</a></li> 
+												<li><a href="#">Краснодар</a></li> 
+												<li><a href="#">Симферополь</a></li> 
+												<li><a href="#">Севастополь</a></li> 
+												<li><a href="#">Самара</a></li> 
+												<li><a href="#">Рязань</a></li> 
+											</ul> 
+										</div>
+									</div>
+								</div>
 							</div>
 							<div class="sandwich">
 								<div class="sw-topper"></div>
@@ -270,6 +306,45 @@
 						</ul>
 					</nav>
 					<div class="show-mobile">
+						<div class="location-main">
+							<div class="location-main__value"><i class="far fa-chevron-down"></i> Симферополь</div>
+							<div class="dropdown-city"> 
+								<div class="close-dropdown"><i class="far fa-times"></i></div>
+								<div class="dropdown-city__title">Ваш город — <span>Москва?</span></div> 
+								<div class="dropdown-city__buttons">
+									<span class="btn-main close-city">Все верно</span> 
+									<span class="btn-main btn-main--page">Сменить город</span> 
+								</div>
+							</div>
+							<div class="modal-city"> 
+								<div class="modal-city__wrappper">
+									<div class="modal-city__content">
+									<div class="close-dropdown"><i class="far fa-times"></i></div>
+									<div class="modal-city__search">
+										<form>
+											<input type="text" placeholder="Введите название города" required>
+										</form>
+									</div>
+										<ul class="list-cities">
+											<li><a href="#">Ростов-на-Дону</a></li> 
+											<li><a href="#">Москва</a></li> 
+											<li><a href="#">Краснодар</a></li> 
+											<li><a href="#">Симферополь</a></li> 
+											<li><a href="#">Севастополь</a></li> 
+											<li><a href="#">Самара</a></li> 
+											<li><a href="#">Рязань</a></li> 
+											<li><a href="#">Ростов-на-Дону</a></li> 
+											<li><a href="#">Москва</a></li> 
+											<li><a href="#">Краснодар</a></li> 
+											<li><a href="#">Симферополь</a></li> 
+											<li><a href="#">Севастополь</a></li> 
+											<li><a href="#">Самара</a></li> 
+											<li><a href="#">Рязань</a></li> 
+										</ul> 
+									</div>
+								</div>
+							</div>
+						</div>
 						<div class="header__info">
 							<p>г. Симферополь, ул. Крылова, 172 <br>+7 (918) 073-82-82,  +7 (918) 074-82-82</p>
 						</div>
@@ -499,7 +574,7 @@
 	<script src="libs/fullPage.js-master/dist/fullpage.js"></script>
 	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
 	<script src="libs/mask/jquery.maskedinput.js"></script>
-	<script src="js/common.js?ver=1.8"></script>
+	<script src="js/common.js?ver=1.9"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function () {

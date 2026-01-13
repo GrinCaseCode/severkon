@@ -1,4 +1,9 @@
 /*==========  Desktop First Method  ==========*/
+@media only screen and (max-width : 1700px) {
+    .item-contact {
+        font-size: 18px;
+    }
+}
 @media only screen and (max-width : 1600px) {
     body {
         font-size: 14px;
@@ -19,9 +24,9 @@
         font-size: 79px;
     }
     .billbord__system {
-        margin-top: -39px; 
+        margin-top: -39px;
         margin-bottom: -50px;
-        transform: scale(0.8); 
+        transform: scale(0.8);
         transform-origin: 50% 0%;
     }
     .breadcrumbs {
@@ -272,7 +277,7 @@
     #map .item-location {
         max-width: 360px;
     }
-    .item-contact__title, .item-contact__phones {
+    .item-contact__title {
         font-size: 27px;
     }
     .item-contact__location {
@@ -360,6 +365,39 @@
     .unit-about .features__icon img {
         width: 25px;
     }
+    .dropdown-city__title {
+        font-size: 18px;
+        padding-right: 22px;
+        margin-bottom: 16px;
+    }
+    .dropdown-city {
+        padding: 18px;
+        min-width: 269px;
+    }
+    .dropdown-city .btn-main {
+        font-size: 12px;
+        height: 32px;
+    }
+    .modal-city__content {
+        width: 660px;
+    }
+    .modal-city__search input {
+        height: 38px;
+        font-size: 14px;
+    }
+    .list-cities {
+        gap: 4px;
+    }
+    .list-cities a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .item-contact {
+        font-size: 15px;
+    }
+    .item-contact .socials-list {
+        margin-top: 19px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -441,7 +479,7 @@
     .article-content {
         max-width: 85%;
     }
-    .item-contact__title, .item-contact__phones {
+    .item-contact__title {
         font-size: 22px;
     }
     .item-contact__requisites {
@@ -482,6 +520,9 @@
     }
     .billbord-page__content {
         margin: 0;
+    }
+    .item-contact {
+        font-size: 13px;
     }
 }
 
@@ -998,6 +1039,7 @@
         max-width: 240px;
     }
     .item-contact {
+        font-size: 16px;
         margin-bottom: 25px;
     }
     .form-page {
@@ -1031,7 +1073,7 @@
         position: relative;
         z-index: 2;
     }
-    .item-contact__title, .item-contact__phones {
+    .item-contact__title {
         font-size: 18px;
     }
 
@@ -1045,7 +1087,7 @@
     .billbord__background {
         width: 2000px;
         height: 2000px;
-        animation: rotate-circle 5s linear infinite;
+        animation: rotate-circle 10s linear infinite;
     }
     .lead__wrapper {
         display: block;
@@ -1144,7 +1186,85 @@
         min-height: initial;
     }
     .hero__item--5 {
-        bottom: 6vw; 
+        bottom: 6vw;
+    }
+
+    .hero {
+        height: 500px;
+        width: 888px;
+        background-size: cover;
+        position: relative;
+        animation: heroMove 12s ease-in-out infinite alternate;
+        will-change: transform;
+    }
+    @keyframes heroMove {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(100vw - 888px));
+        }
+    }
+
+    .hero__item {
+        width: 70px;
+        font-size: 9px;
+    }
+    .hero__item--1 {
+        top: 120.7px;
+        left: 119.8px;
+    }
+    .hero__item--2 {
+        top: 110px;
+        left: 290.4px;
+    }
+    .hero__item--3 {
+        top: 102.2px;
+        right: 304.3px;
+    }
+    .hero__item--4 {
+        top: 285.4px;
+        right: 126.3px;
+    }
+    .hero__item--5 {
+        bottom: 64.9px;
+        left: 416.5px;
+    }
+    .hero__item--5 .hero__item-line {
+        height: 33.7px;
+        margin-bottom: -13.3px;
+        transform: scale(-1, -1);
+    }
+    .hero__item-line {
+        width: 13.9px;
+        height: 79.9px;
+        margin-top: -7.1px;
+    }
+    .hero__item-line::before {
+        width: 13.9px;
+        height: 13.9px;
+    }
+    .hero__item-line::after {
+        width: 1px;
+        top: 13.9px;
+    }
+    .hero__btn {
+        right: 15px;
+        bottom: 15px;
+        width: 148px;
+        height: 40px;
+        font-size: 11px;
+        border-radius: 6px;
+    }
+    .modal-city__wrappper {
+        padding: 0 15px;
+    }
+    .header__left .location-main {
+        display: none;
+    }
+    .location-main__value {
+        padding: 8px;
+        gap: 15px;
     }
 }
 
@@ -1176,14 +1296,7 @@
     .billbord--page .main-image-wrapper {
         margin-bottom: -340px;
     }
-    .hero__btn {
-        right: 2.375vw;
-        bottom: 2.677vw;
-        width: 25.583vw;
-        height: 6.969vw;
-        font-size: 1.833vw;
-        border-radius: 0.913vw;
-    }
+
 }
 
 /*mobile first*/
@@ -1261,6 +1374,14 @@
         border-color: #e9eaed;
         color: var(--primary-color);
     }
+    .btn-main.btn-main--page:hover {
+        color: #fff;
+        border-color: var(--main-color);
+    }
+    .list-cities a:hover {
+        background: var(--primary-color);
+        color: #fff;
+    }
 }
 
 /*mobile hovers*/
@@ -1314,5 +1435,9 @@
         background: #e9eaed;
         border-color: #e9eaed;
         color: var(--primary-color);
+    }
+    .list-cities a:active {
+        background: var(--primary-color);
+        color: #fff;
     }
 }

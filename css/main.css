@@ -24,7 +24,7 @@ body {
 	font-family: 'HelveticaNeueCyr', sans-serif;
 	font-size: 16px;
 	line-height: 140%;
-	color: var(--main-color);
+	color: var(--main-color); 
 	overflow-x: hidden;
 	margin: 0;
 	background-color: #fff;

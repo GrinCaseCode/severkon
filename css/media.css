@@ -1090,7 +1090,7 @@
         animation: rotate-circle 10s linear infinite;
     }
     .lead {
-        padding-bottom: 25px;
+        padding-bottom: 15px;
     }
     .lead__wrapper {
         padding: 0 15px;

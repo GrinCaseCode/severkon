@@ -308,6 +308,7 @@
     .billbord__title {
         margin-bottom: -40px;
     }
+    .orbit-wrapper,
     .main-image-wrapper {
         margin-bottom: -40px;
         transform: scale(0.8);
@@ -488,6 +489,7 @@
     .form-page__title {
         font-size: 24px;
     }
+    .orbit-wrapper,
     .main-image-wrapper {
         margin-bottom: -120px;
         transform: scale(0.6);
@@ -1077,6 +1079,7 @@
         font-size: 20px;
     }
 
+    .orbit-wrapper,
     .main-image-wrapper {
         margin-bottom: -220px;
         transform: scale(0.5);
@@ -1146,6 +1149,7 @@
         padding: 30px 0;
         padding-bottom: 20px;
     }
+    .billbord--page .orbit-wrapper,
     .billbord--page .main-image-wrapper {
         margin-bottom: -220px;
     }
@@ -1282,10 +1286,12 @@
 }
 
 @media only screen and (max-width : 768px) {
+    .orbit-wrapper,
     .main-image-wrapper {
         margin-bottom: -300px;
         transform: scale(0.35);
     }
+    .billbord--page .orbit-wrapper,
     .billbord--page .main-image-wrapper {
         margin-bottom: -300px;
     }
@@ -1298,6 +1304,7 @@
     .item-news__image {
         height: 245px;
     }
+    .orbit-wrapper,
     .main-image-wrapper {
         left: 42%;
         margin-top: 20px;
@@ -1306,6 +1313,7 @@
         transform-origin: 0 0;
         position: relative;
     }
+    .billbord--page .orbit-wrapper, 
     .billbord--page .main-image-wrapper {
         margin-bottom: -340px;
     }

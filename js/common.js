@@ -1,5 +1,52 @@
 $(document).ready(function () {
 
+$(function () {
+
+  const steps = [1,2,3];
+  let isAnimating = false;
+
+  function getCurrentStep($el) {
+    for (let i of steps) {
+      if ($el.hasClass(`step-${i}`)) return i;
+    }
+    return 1;
+  }
+
+  function nextStep(n) {
+    return n === 3 ? 1 : n + 1;
+  }
+
+  function animate() {
+    if (isAnimating) return;
+    isAnimating = true;
+
+    $('.orbit__item').each(function () {
+      const $el = $(this);
+      const current = getCurrentStep($el);
+      const next = nextStep(current);
+
+      $el
+        .removeClass(function (_, cls) {
+          return cls.match(/step-\d|move-\d-\d/g);
+        })
+        .addClass(`move-${current}-${next}`)
+        .one('animationend', function () {
+          $el
+            .removeClass(function (_, cls) {
+              return cls.match(/move-\d-\d/g);
+            })
+            .addClass(`step-${next}`);
+
+          isAnimating = false;
+        });
+    });
+  }
+
+  setInterval(animate, 1200);
+});
+
+
+
 	// выпадающий списко городов
 
 	setTimeout(() => {

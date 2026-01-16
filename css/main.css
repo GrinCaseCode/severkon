@@ -1990,15 +1990,19 @@ form {
 .billbord--page .circle__item::before {
 	display: none;
 }
-.billbord--page .circle__item {
-	padding-right: 70px;
+.billbord--page .orbit__item {
+	padding: 18px;
+	padding-left: 72px;
+	font-size: 17px;
 	width: 290px;
 }
 .circle__icon {
-	width: 66px;
-	height: 66px;
-	top: 0;
-	right: 0;
+    width: 56px;
+    height: 56px;
+    top: 0;
+    bottom: 0;
+    left: 8px;
+    margin: auto;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
@@ -2007,7 +2011,7 @@ form {
 	position: absolute;
 }
 .circle__icon img {
-	width: 36px;
+	width: 30px;
 }
 .billbord--page .circle-1 {
 	--inset: auto auto -40px calc(50% + 430px);
@@ -2382,4 +2386,141 @@ form {
 }
 .item-contact .socials-list {
 	margin-top: 28px;
+}
+
+.orbit {
+	width: 610px;
+	position: relative;
+	margin: 0 auto;
+}
+.orbit__image img {
+	max-width: 100%;
+	height: auto;
+}
+.orbit::before {
+	position: absolute;
+	display: block;
+	content: " ";
+	width: 977px;
+	height: 314px;
+	top: 105px;
+	left: -245px;
+	background-image: url(../img/orbit.svg);
+	background-size: contain;
+}
+.orbit__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 256px;
+  padding: 24px 24px 24px 72px;
+  font-size: 20px;
+  line-height: 140%;
+  border-radius: 12px;
+  font-weight: 500;
+  background: rgba(255,255,255,.25);
+  animation-duration: 1.8s;
+  animation-fill-mode: forwards;
+  will-change: transform, opacity;
+}
+.step-1 { transform: translate(336px, 277px) scale(1);   z-index: 4; opacity: 1; }
+.step-2 { transform: translate(-583px, 245px) scale(.9); }
+.step-3 { transform: translate(-619px,113px) scale(.8); z-index: 2; opacity: 1; }
+.step-4 { transform: translate(-321px, 30px) scale(.4); z-index: -1; opacity: .4; }
+.move-1-2 { animation-name: move-1-2; }
+@keyframes move-1-2 {
+  0%   
+  	{ 
+		transform: translate(336px,277px) scale(1);   
+		z-index: 4; 
+	}
+	40%   
+  	{ 
+		margin-top: 80px;
+	}
+  100% { 
+	margin-top: 0;
+		transform: translate(-583px,245px) scale(.9); 
+		z-index: 3; 
+	}
+}
+.move-2-3 { animation-name: move-2-3; }
+@keyframes move-2-3 {
+  0%   { transform: translate(-583px,245px) scale(.9); z-index: 3; }
+  100% { transform: translate(-619px,113px) scale(.8); z-index: 2; }
+}
+.move-3-4 { animation-name: move-3-4; }
+@keyframes move-3-4 {
+  0%   {
+    transform: translate(-619px,113px) scale(.8);
+    z-index: 2;
+    opacity: 1;
+  }
+
+  20% {
+    z-index: 2;
+  }
+
+  21% {
+    z-index: -1;
+  }
+
+  100% {
+    transform: translate(-321px,30px) scale(.4);
+    z-index: -1;
+    opacity: .4;
+  }
+}
+
+.move-4-1 { animation-name: move-4-1;}
+@keyframes move-4-1 {
+  0%   {
+    transform: translate(-321px,30px) scale(.4);
+    z-index: -1;
+    opacity: .4;
+  }
+  80% {
+    z-index: -1;
+    opacity: .4;
+  }
+  100% {
+    transform: translate(336px,277px) scale(1);
+    z-index: 4;
+    opacity: 1;
+  }
+}
+
+.move-3-1 {
+  animation-name: move-3-1;
+}
+@keyframes move-3-1 {
+  0% {
+    transform: translate(-619px,113px) scale(.8);
+    z-index: 2;
+    opacity: 1;
+  }
+	20% {
+    z-index: -1;
+    opacity: 0;
+  }
+  40% {
+    transform: translate(-300px,20px) scale(.9);
+    z-index: -1;
+    opacity: 0;
+  }
+  70% {
+    z-index: -1;
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: translate(336px,277px) scale(1);
+    z-index: 4;
+    opacity: 1;
+  }
+}
+
+.orbit__item .circle__dot {
+	top: 24px;
+	left: 24px;
 }
